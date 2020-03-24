@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class VulnController {
 	
-	@GetMapping("/fmtstring")
-	public String fmtString(final @RequestParam(value = "userName") String userName) {
+	@GetMapping("/userinfo")
+	public String fmtString(final @RequestParam(value = "username") String userName) {
 		System.out.printf("DEBUG: " + userName);
 		return userName;
 	}
